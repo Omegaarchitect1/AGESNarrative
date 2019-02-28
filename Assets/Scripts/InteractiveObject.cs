@@ -6,6 +6,6 @@ public class InteractiveObject : MonoBehaviour, IInteractive
 {
     public void InteractWith()
     {
-        Debug.Log($"Player iinteracted with {gameObject.name}");
+        Debug.Log($"Player interacted with {gameObject.name}");
     }
 }

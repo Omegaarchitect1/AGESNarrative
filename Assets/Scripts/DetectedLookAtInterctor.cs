@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectedLookAtInterctor : MonoBehaviour
 {
-    //
+
     [Tooltip("Starting point the raycast used to detect interactives.")]
     [SerializeField]
     private Transform raycastOrigin;
@@ -13,6 +13,13 @@ public class DetectedLookAtInterctor : MonoBehaviour
     [SerializeField]
     private float maxRange = 5.0f;
 
+    private IInteractive lookAtInteractive;
+    
+    public IInteractive LookedAtInteractive
+    {
+        get { return lookAtInteractive; }
+        set { LookedAtInteractive = value; }
+    }
 
     private void FixedUpdate()
     {
@@ -29,7 +36,7 @@ public class DetectedLookAtInterctor : MonoBehaviour
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
 
             if (interactive != null)
-                interactive.InteractWith();
+                lookAtInteractive = interactive;
         }
     }
 }
