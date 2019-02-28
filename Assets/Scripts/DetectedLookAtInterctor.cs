@@ -13,11 +13,17 @@ public class DetectedLookAtInterctor : MonoBehaviour
     [SerializeField]
     private float maxRange = 5.0f;
 
-    private Vector3 raycastDirection;
-
 
     private void FixedUpdate()
     {
-        Physics.Raycast(raycastOrigin.position, raycastDirection, maxRange);
+        
+        Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxRange, Color.red);
+        RaycastHit hitInfo;
+        bool objectWasDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxRange);
+
+            if(objectWasDetected)
+        {
+            Debug.Log($"Player is looking at:  {hitInfo.collider.gameObject.name}");
+        }
     }
 }
