@@ -8,8 +8,18 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
 	private IInteractive LookedAtInteractive;
 	private Text displayText;
 
-	private void UpdateDisplayText
-	{
-		displayText.Text =
-	}
+
+    private void Awake()
+    {
+        displayText.GetComponent<Text>();
+    }
+
+    private void UpdateDisplayText()
+    {
+        if (LookedAtInteractive != null)
+            displayText.text = LookedAtInteractive.DisplayText;
+        else
+            displayText.text = string.Empty;
+         
+    }
 }

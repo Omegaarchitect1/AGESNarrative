@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,13 +14,27 @@ public class DetectedLookAtInterctor : MonoBehaviour
     [SerializeField]
     private float maxRange = 5.0f;
 
-    private IInteractive lookAtInteractive;
+    public static event Action LookedAtInteractiveChanged;
+
     
     public IInteractive LookedAtInteractive
     {
         get { return lookAtInteractive; }
-        set { LookedAtInteractive = value; }
+        private set
+        {
+            bool isInteractiveChanged = value != LookedAtInteractive;
+            if(isInteractiveChanged)
+            {
+                LookedAtInteractive = value;
+                LookedAtInteractiveChanged?.Invoke();
+                //stopped video tutorial 3 at 47:25
+               
+            }
+
+        }
     }
+
+    private IInteractive lookAtInteractive;
 
     private void FixedUpdate()
     {

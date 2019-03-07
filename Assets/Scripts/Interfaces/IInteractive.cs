@@ -6,6 +6,7 @@ using UnityEngine;
 /// </summary>
 public interface IInteractive
 {
+    string DisplayText { get; }
     void InteractWith();
 }
 
