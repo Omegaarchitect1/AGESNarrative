@@ -14,27 +14,27 @@ public class DetectedLookAtInterctor : MonoBehaviour
     [SerializeField]
     private float maxRange = 5.0f;
 
-    public static event Action LookedAtInteractiveChanged;
+    public static event Action<IInteractive> LookedAtInteractiveChanged;
 
     
     public IInteractive LookedAtInteractive
     {
-        get { return lookAtInteractive; }
+        get { return lookedAtInteractive; }
         private set
         {
-            bool isInteractiveChanged = value != LookedAtInteractive;
+            bool isInteractiveChanged = value != lookedAtInteractive;
             if(isInteractiveChanged)
             {
-                LookedAtInteractive = value;
-                LookedAtInteractiveChanged?.Invoke();
-                //stopped video tutorial 3 at 47:25
+                lookedAtInteractive = value;
+                LookedAtInteractiveChanged?.Invoke(lookedAtInteractive);
+                
                
             }
 
         }
     }
 
-    private IInteractive lookAtInteractive;
+    private IInteractive lookedAtInteractive;
 
     private void FixedUpdate()
     {
@@ -51,7 +51,7 @@ public class DetectedLookAtInterctor : MonoBehaviour
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
 
             if (interactive != null)
-                lookAtInteractive = interactive;
+                lookedAtInteractive = interactive;
         }
     }
 }

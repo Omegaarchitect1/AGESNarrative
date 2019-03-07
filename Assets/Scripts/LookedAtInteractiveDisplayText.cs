@@ -22,4 +22,22 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
             displayText.text = string.Empty;
          
     }
+
+    private void OnLookedAtInteractiveChanged(IInteractive newLookedAtInteractive)
+    {
+        LookedAtInteractive = newLookedAtInteractive;
+        UpdateDisplayText();
+    }
+
+    private void OnEnable()
+    {
+        DetectedLookAtInterctor.LookedAtInteractiveChanged += OnLookedAtInteractiveChanged;
+    }
+
+    private void OnDisable()
+    {
+        DetectedLookAtInterctor.LookedAtInteractiveChanged -= OnLookedAtInteractiveChanged;
+
+    }
+
 }
