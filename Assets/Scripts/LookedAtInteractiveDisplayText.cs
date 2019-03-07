@@ -10,6 +10,6 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
 
 	private void UpdateDisplayText
 	{
-		displayText.Text = 
+		displayText.Text =
 	}
 }
