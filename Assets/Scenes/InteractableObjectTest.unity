@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 968495924}
   - component: {fileID: 968495929}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: InteractiveObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,14 +708,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91730f0160a67bf4780ec6a9450856cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: 
+  displayText: InteractiveObject
 --- !u!43 &1000819106
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh12956
+  m_Name: pb_Mesh20770
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1063,8 +1063,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444, y: 0}
-  m_SizeDelta: {x: 217.89, y: 78.5}
+  m_AnchoredPosition: {x: -0.000015259, y: 29}
+  m_SizeDelta: {x: 763, y: 393.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344490766
 MonoBehaviour:
@@ -1517,8 +1517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -669.3, y: 247}
-  m_SizeDelta: {x: 111.9, y: 55.1}
+  m_AnchoredPosition: {x: -80, y: 39}
+  m_SizeDelta: {x: 90.7, y: 41.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727649136
 MonoBehaviour:
@@ -1554,7 +1554,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1671,7 +1671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e71370b21e5bd2940a7d8dfa11e68be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectLookAtInteractive: {fileID: 2082044132}
 --- !u!4 &2099974302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c6453f8e1f814744d8b94e5a6d1f9942,
