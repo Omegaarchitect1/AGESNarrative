@@ -12,6 +12,7 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
     private void Awake()
     {
         displayText.GetComponent<Text>();
+        UpdateDisplayText();
     }
 
     private void UpdateDisplayText()
@@ -26,7 +27,7 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
     private void OnLookedAtInteractiveChanged(IInteractive newLookedAtInteractive)
     {
         LookedAtInteractive = newLookedAtInteractive;
-        UpdateDisplayText();
+        
     }
 
     private void OnEnable()

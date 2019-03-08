@@ -38,20 +38,24 @@ public class DetectedLookAtInterctor : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+       LookedAtInteractive =  GetLookedAtInteractive();
+    }
+
+    private IInteractive GetLookedAtInteractive()
+    {
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxRange, Color.red);
         RaycastHit hitInfo;
         bool objectWasDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxRange);
 
         IInteractive interactive = null;
 
-            if(objectWasDetected)
+        if (objectWasDetected)
         {
             //Debug.Log($"Player is looking at:  {hitInfo.collider.gameObject.name}");
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
-
-            if (interactive != null)
-                lookedAtInteractive = interactive;
         }
+
+        return interactive;
+        
     }
 }
