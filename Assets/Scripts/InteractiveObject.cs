@@ -8,8 +8,27 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     private string displayText = nameof(InteractiveObject);
     public string DisplayText => displayText;
 
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void InteractWith()
     {
-        Debug.Log($"Player interacted with {gameObject.name}");
+        try
+        {
+            audioSource.Play();
+        }
+
+        catch (System.Exception)
+        {
+
+            throw new System.Exception("Missing audio component: InteractiveObject requires an AudioSource component");
+        }
+        Debug.Log($"Player interacted with {gameObject.name}.");
+
+
     }
 }
