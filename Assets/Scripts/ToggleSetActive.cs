@@ -8,11 +8,24 @@ public class ToggleSetActive : InteractiveObject
     [SerializeField]
     private GameObject objectToToggle;
 
+    [Tooltip("Can the player interact with this more than once?")]
+    [SerializeField]
+    private bool isReusable = true;
+
+    private bool hasBeenUsed = false;
+
     /// <summary>
     /// Toggles the active self value for the object to toggle when the player interacts with this item
     /// </summary>
     public override void InteractWith()
     {
-        objectToToggle.SetActive(!objectToToggle.activeSelf);
+        if (isReusable || !hasBeenUsed)
+        {
+            base.InteractWith();
+            objectToToggle.SetActive(!objectToToggle.activeSelf);
+            hasBeenUsed = true;
+            if (!isReusable) displayText = string.Empty;
+
+        }
     }
 }
