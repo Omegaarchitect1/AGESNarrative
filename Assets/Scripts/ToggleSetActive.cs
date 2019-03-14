@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ToggleSetActive : InteractiveObject
+{
+    [Tooltip("The GameObject to toggle")]
+    [SerializeField]
+    private GameObject objectToToggle;
+
+    /// <summary>
+    /// Toggles the active self value for the object to toggle when the player interacts with this item
+    /// </summary>
+    public override void InteractWith()
+    {
+        objectToToggle.SetActive(!objectToToggle.activeSelf);
+    }
+}
