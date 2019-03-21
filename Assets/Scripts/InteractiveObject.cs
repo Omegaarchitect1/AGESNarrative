@@ -7,8 +7,6 @@ public class InteractiveObject : MonoBehaviour, IInteractive
 {
     [SerializeField]
     private protected string displayText = nameof(InteractiveObject);
-
-
     public string DisplayText => displayText;
 
     private AudioSource audioSource;
@@ -24,14 +22,10 @@ public class InteractiveObject : MonoBehaviour, IInteractive
         {
             audioSource.Play();
         }
-
         catch (System.Exception)
         {
-
             throw new System.Exception("Missing audio component: InteractiveObject requires an AudioSource component");
         }
         Debug.Log($"Player interacted with {gameObject.name}.");
-
-
     }
 }

@@ -22,13 +22,17 @@ public class Door : InteractiveObject
         animator = GetComponent<Animator>();
     }
 
+    /// <summary>
+    /// Calling the InteractWith method from the IInteractive interface to utilize that functionality 
+    /// </summary>
+
     public override void InteractWith()
     {
         if(!isOpen)
         {
         base.InteractWith();
         animator.SetBool("shouldOpen", true);
-            displayText = string.Empty;
+        displayText = string.Empty;
         isOpen = true;
         }
        

@@ -25,7 +25,6 @@ public class ToggleSetActive : InteractiveObject
             objectToToggle.SetActive(!objectToToggle.activeSelf);
             hasBeenUsed = true;
             if (!isReusable) displayText = string.Empty;
-
         }
     }
 }

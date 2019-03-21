@@ -8,8 +8,6 @@ using UnityEngine;
 public class InteractWithLookedAt : MonoBehaviour
 {
     private IInteractive lookedAtInteractive;
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Interact") && lookedAtInteractive != null)
@@ -23,9 +21,7 @@ public class InteractWithLookedAt : MonoBehaviour
     {
         lookedAtInteractive = newLookedAtInteractive;
     }
-
     #region event subscirption / unsubsciption
-
     private void OnEnable()
     {
         DetectedLookAtInterctor.LookedAtInteractiveChanged += OnLookedAtInteractiveChanged;
