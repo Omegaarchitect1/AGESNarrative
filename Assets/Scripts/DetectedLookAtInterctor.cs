@@ -27,8 +27,6 @@ public class DetectedLookAtInterctor : MonoBehaviour
             {
                 lookedAtInteractive = value;
                 LookedAtInteractiveChanged?.Invoke(lookedAtInteractive);
-                
-               
             }
 
         }
