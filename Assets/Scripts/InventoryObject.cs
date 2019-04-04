@@ -7,8 +7,14 @@ public class InventoryObject : InteractiveObject
 
     [SerializeField]
     private string objectName = nameof(InventoryObject);
-    // TODO: add long desctiption field
-    // TODO: add item icon
+
+    [SerializeField]
+    [TextArea(3,8)]
+    private string description;
+
+    [SerializeField]
+    private Sprite icon;
+   
 
     public string ObjectName => objectName;
 
