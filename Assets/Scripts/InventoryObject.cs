@@ -10,14 +10,17 @@ public class InventoryObject : InteractiveObject
     // TODO: add long desctiption field
     // TODO: add item icon
 
+    public string ObjectName => objectName;
+
+    private new Renderer renderer;
+    private new Collider collider;
     private void Start()
     {
         renderer = GetComponent<Renderer>();
         collider = GetComponent<Collider>();
     }
 
-    private new Renderer renderer;
-    private new Collider collider;
+
      public InventoryObject()
     {
         displayText = $"Take {objectName}";
