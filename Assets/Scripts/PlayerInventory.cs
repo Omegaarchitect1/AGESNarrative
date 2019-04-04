@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class PlayerInventory 
 {
-    public List<InventoryObject> InventoryObjects { get; } = new List<InventoryObject>();
+    public static List<InventoryObject> InventoryObjects { get; } = new List<InventoryObject>();
 
    
 }

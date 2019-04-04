@@ -7,11 +7,28 @@ public class InventoryObject : InteractiveObject
     // TODO: add long desctiption field
     // TODO: add item icon
 
+    private void Start()
+    {
+        renderer = GetComponent<Renderer>();
+        collider = GetComponent<Collider>();
+    }
+
+    private new Renderer renderer;
+    private new Collider collider;
+     public InventoryObject()
+    {
+        displayText = nameof(InventoryObject);
+    }
+
     public override void InteractWith()
     {
         base.InteractWith();
-        PlayerInventory p = new PlayerInventory();
-        p.InventoryObjects.Add(this);
+        PlayerInventory.InventoryObjects.Add(this);
+        collider.enabled = false;
+        renderer.enabled = false;
+
+        //ended video at 37:27
+
 
     }
 }
