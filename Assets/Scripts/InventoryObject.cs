@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InventoryObject : InteractiveObject
 {
+
+    [SerializeField]
+    private string objectName = nameof(InventoryObject);
     // TODO: add long desctiption field
     // TODO: add item icon
 
@@ -17,7 +20,7 @@ public class InventoryObject : InteractiveObject
     private new Collider collider;
      public InventoryObject()
     {
-        displayText = nameof(InventoryObject);
+        displayText = $"Take {objectName}";
     }
 
     public override void InteractWith()
@@ -26,9 +29,5 @@ public class InventoryObject : InteractiveObject
         PlayerInventory.InventoryObjects.Add(this);
         collider.enabled = false;
         renderer.enabled = false;
-
-        //ended video at 37:27
-
-
     }
 }
