@@ -14,10 +14,11 @@ public class InventoryObject : InteractiveObject
 
     [SerializeField]
     private Sprite icon;
-   
 
+    public Sprite Icon => icon;
     public string ObjectName => objectName;
-
+    public string Desciption => description;
+   
     private new Renderer renderer;
     private new Collider collider;
     private void Start()

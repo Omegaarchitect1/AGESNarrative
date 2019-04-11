@@ -40,6 +40,12 @@ public class InventoryMenu : MonoBehaviour
         rigidbodyFirstPersonController.enabled = true;
     }
 
+    public void ExitMenuButtonClick()
+    {
+        HideMenu();
+    }
+
+
     private void Update()
     {
         HandleInput();
