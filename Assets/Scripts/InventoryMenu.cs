@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class InventoryMenu : MonoBehaviour
 {
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
+    private RigidbodyFirstPersonController rigidbodyFirstPersonController;
 
     public static InventoryMenu Instance
     {
@@ -24,12 +26,18 @@ public class InventoryMenu : MonoBehaviour
     {
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
+        rigidbodyFirstPersonController.enabled = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void HideMenu()
     {
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        rigidbodyFirstPersonController.enabled = true;
     }
 
     private void Update()
@@ -58,6 +66,12 @@ public class InventoryMenu : MonoBehaviour
             throw new System.Exception("There is already an instance of InventoryMenu active. THERE CAN BE ONLY OOOOOOOONE");
 
         canvasGroup = GetComponent<CanvasGroup>();
+        rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
         HideMenu();
+    }
+
+    private void Start()
+    {
+        HideMenu(); 
     }
 }
