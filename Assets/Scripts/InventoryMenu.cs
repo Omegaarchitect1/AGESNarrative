@@ -50,9 +50,7 @@ public class InventoryMenu : MonoBehaviour
 
     public void AddItemToMenu(InventoryObject inventoryObjectToAdd)
     {
-        GameObject clone = Instantiate(InventoryItemTogglePrefab);
-        InventoryItemToggle toggle = clone.GetComponent<InventoryItemToggle>();
-        toggle.AssociatedInventoryObject = inventoryObjectToAdd;
+        Instantiate(InventoryItemTogglePrefab);
     }
 
 
