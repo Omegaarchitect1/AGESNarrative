@@ -22,8 +22,11 @@ public class InventoryItemToggle : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Awake()
     {
-        iconImage.sprite = associatedInventoryObject.Icon; 
+        Toggle toggle = GetComponent<Toggle>();
+        ToggleGroup toggleGroup = GetComponentInParent<ToggleGroup>();
+        toggle.group = toggleGroup;
     }
+
 }

@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class InventoryMenu : MonoBehaviour
 {
     [SerializeField]
     private GameObject InventoryItemTogglePrefab;
 
+    [SerializeField]
+    private Transform InventoryContentArea;
+
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
     private RigidbodyFirstPersonController rigidbodyFirstPersonController;
+    private ToggleGroup toggleGroup;
+   
 
     public static InventoryMenu Instance
     {
@@ -50,7 +56,9 @@ public class InventoryMenu : MonoBehaviour
 
     public void AddItemToMenu(InventoryObject inventoryObjectToAdd)
     {
-        Instantiate(InventoryItemTogglePrefab);
+       GameObject clone = Instantiate(InventoryItemTogglePrefab, InventoryContentArea);
+        InventoryItemToggle toggle = clone.GetComponent<InventoryItemToggle>();
+        toggle.AssociatedInventoryObject = inventoryObjectToAdd;
     }
 
 
@@ -81,7 +89,7 @@ public class InventoryMenu : MonoBehaviour
 
         canvasGroup = GetComponent<CanvasGroup>();
         rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
-        HideMenu();
+        toggleGroup = GetComponentInChildren<ToggleGroup>();
     }
 
     private void Start()
