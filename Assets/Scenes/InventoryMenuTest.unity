@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1822,7 +1822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000016222502, y: 0.079977036}
+  m_AnchoredPosition: {x: -0.000016222502, y: 0.07996749}
   m_SizeDelta: {x: -0.0016174, y: 291.18}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &609736844
@@ -4364,6 +4364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52473e782a97a34c924ea95bf06ebd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InventoryItemTogglePrefab: {fileID: 2392617735851620269, guid: 75262465995459c4781988c9580a21e7,
+    type: 3}
 --- !u!43 &1700473269
 Mesh:
   m_ObjectHideFlags: 0
@@ -5036,7 +5038,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13354
+  m_Name: pb_Mesh13332
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
