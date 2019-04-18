@@ -22,6 +22,13 @@ public class InventoryItemToggle : MonoBehaviour
         }
     }
 
+    public void InventoryItemWasToggled(bool isOn)
+    {
+        //if (isOn) ;
+        Debug.Log($"Toggled: {isOn}");
+
+    }
+
     private void Awake()
     {
         Toggle toggle = GetComponent<Toggle>();
