@@ -12,6 +12,12 @@ public class InventoryMenu : MonoBehaviour
     [SerializeField]
     private Transform InventoryContentArea;
 
+    [SerializeField]
+    private Text itemLabelText;
+
+    [SerializeField]
+    private Text descriptinAreaText;
+
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
     private RigidbodyFirstPersonController rigidbodyFirstPersonController;
@@ -59,6 +65,22 @@ public class InventoryMenu : MonoBehaviour
        GameObject clone = Instantiate(InventoryItemTogglePrefab, InventoryContentArea);
         InventoryItemToggle toggle = clone.GetComponent<InventoryItemToggle>();
         toggle.AssociatedInventoryObject = inventoryObjectToAdd;
+    }
+
+    private void OnInventoryMeniItemSelected(InventoryObject inventoryObjectThatWasSelected)
+    {
+        itemLabelText.text = inventoryObjectThatWasSelected.ObjectName;
+        descriptinAreaText.text = inventoryObjectThatWasSelected.Desciption;
+    }
+
+    private void OnEnable()
+    {
+        InventoryItemToggle.InventoryMenuItemSelected += OnInventoryMeniItemSelected;
+    }
+
+    private void OnDisable()
+    {
+        InventoryItemToggle.InventoryMenuItemSelected -= OnInventoryMeniItemSelected;
     }
 
 

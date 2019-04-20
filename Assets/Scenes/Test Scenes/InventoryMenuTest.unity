@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -193,7 +193,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25408
+  m_Name: pb_Mesh13512
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -548,7 +548,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1310
+  m_Name: pb_Mesh-1270
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -834,7 +834,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: Take Key
   objectName: Key
-  description: 
+  description: 'A yellow key.
+
+
+    ...
+
+
+    What more did you expect?'
   icon: {fileID: 21300000, guid: bb0045098a39d1b4fb97796a4fa86ffc, type: 3}
 --- !u!64 &356838012
 MeshCollider:
@@ -1414,7 +1420,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13562
+  m_Name: pb_Mesh13606
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1663,7 +1669,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1278
+  m_Name: pb_Mesh-1238
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1851,7 +1857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000017937116, y: 0.080001585}
+  m_AnchoredPosition: {x: -0.000017937116, y: 0.079989836}
   m_SizeDelta: {x: -0.0016174, y: 291.18}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &609736844
@@ -2112,7 +2118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13636
+  m_Name: pb_Mesh13678
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2272,7 +2278,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21466
+  m_Name: pb_Mesh13574
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3090,102 +3096,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1004211379
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1004211380}
-  - component: {fileID: 1004211382}
-  - component: {fileID: 1004211381}
-  - component: {fileID: 1004211383}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1004211380
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004211379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1598133236}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888184, y: 71.4}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1004211381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004211379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Wanna hear a game dev joke?
-
-    Sorry, it''s still in development. '
---- !u!222 &1004211382
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004211379}
-  m_CullTransparentMesh: 0
---- !u!114 &1004211383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004211379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
 --- !u!1 &1024157927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,7 +3307,7 @@ GameObject:
   - component: {fileID: 1148156434}
   - component: {fileID: 1148156433}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SelectedItemText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3455,7 +3365,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Item name
+  m_Text: 
 --- !u!222 &1148156434
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4175,6 +4085,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598133236}
+  - component: {fileID: 1598133238}
+  - component: {fileID: 1598133237}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -4192,8 +4104,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1004211380}
+  m_Children: []
   m_Father: {fileID: 554205113}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4202,6 +4113,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.000012956735}
   m_SizeDelta: {x: 0.000030518, y: 364.6}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1598133237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598133235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Items you've picked up will be explained here.\n\nExplore and find items
+    to learn more about the world. \n\nClick on an item to read about it. "
+--- !u!222 &1598133238
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598133235}
+  m_CullTransparentMesh: 0
 --- !u!1 &1625228033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,7 +4331,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656737402}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -4396,6 +4350,8 @@ MonoBehaviour:
   InventoryItemTogglePrefab: {fileID: 2392617735851620269, guid: 75262465995459c4781988c9580a21e7,
     type: 3}
   InventoryContentArea: {fileID: 609736843}
+  itemLabelText: {fileID: 1148156433}
+  descriptinAreaText: {fileID: 1598133237}
 --- !u!1 &1727649134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,7 +4512,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1254
+  m_Name: pb_Mesh-1214
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4789,7 +4745,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1515456054}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9997117
+  m_Size: 0.9997253
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4908,7 +4864,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13352
+  m_Name: pb_Mesh13394
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -5068,7 +5024,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1282
+  m_Name: pb_Mesh-1242
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
