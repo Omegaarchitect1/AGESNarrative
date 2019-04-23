@@ -16,7 +16,7 @@ public class InventoryMenu : MonoBehaviour
     private Text itemLabelText;
 
     [SerializeField]
-    private Text descriptinAreaText;
+    private Text descriptionAreaText;
 
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
@@ -70,7 +70,7 @@ public class InventoryMenu : MonoBehaviour
     private void OnInventoryMeniItemSelected(InventoryObject inventoryObjectThatWasSelected)
     {
         itemLabelText.text = inventoryObjectThatWasSelected.ObjectName;
-        descriptinAreaText.text = inventoryObjectThatWasSelected.Desciption;
+        descriptionAreaText.text = inventoryObjectThatWasSelected.Desciption;
     }
 
     private void OnEnable()

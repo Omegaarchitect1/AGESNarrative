@@ -21,9 +21,6 @@ public class Door : InteractiveObject
     [SerializeField]
     private bool ConsumesKey;
 
-    // public override string DisplayText => isLocked ? lockedDisplayText :  base.displayText;
-
-
     public override string DisplayText
     {
         get
