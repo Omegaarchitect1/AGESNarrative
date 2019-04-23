@@ -5,8 +5,40 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Door : InteractiveObject
 {
+   
+    [SerializeField]
+    private string lockedDisplayText = "Locked";
+
+    [SerializeField]
+    private AudioClip lockedAudioClip;
+
+    [SerializeField]
+    private AudioClip openAudioClip;
+
+    [SerializeField]
+    private InventoryObject Key;
+
+    [SerializeField]
+    private bool ConsumesKey;
+
+    public override string DisplayText
+    {
+        get
+        {
+            string toReturn;
+            if (isLocked)
+                toReturn = HasKey ? $"Use {Key.ObjectName}" : lockedDisplayText;
+            else
+                toReturn = base.displayText;
+
+            return toReturn;
+        }
+    }
+
+    private bool isLocked;
     private Animator animator;
     private bool isOpen;
+    private bool HasKey => PlayerInventory.InventoryObjects.Contains(Key);
 
     /// <summary>
     /// Using a constructor to initialize displaytext in the editor
@@ -20,7 +52,14 @@ public class Door : InteractiveObject
     {
         base.Awake();
         animator = GetComponent<Animator>();
+        InitializeIsLocked();
     }
+
+   private void InitializeIsLocked()
+   {
+        if (Key != null)
+        isLocked = true;
+   }
 
     /// <summary>
     /// Calling the InteractWith method from the IInteractive interface to utilize that functionality 
@@ -28,13 +67,28 @@ public class Door : InteractiveObject
 
     public override void InteractWith()
     {
-        if(!isOpen)
+        if (!isOpen)
         {
-        base.InteractWith();
-        animator.SetBool("shouldOpen", true);
-        displayText = string.Empty;
-        isOpen = true;
+            if(isLocked && !HasKey)
+            {
+                audioSource.clip = lockedAudioClip;
+            }
+            else
+            {
+                audioSource.clip = openAudioClip;
+                animator.SetBool("shouldOpen", true);
+                displayText = string.Empty;
+                isOpen = true;
+                isLocked = false;
+                UnlockDoor();
+            }
+            base.InteractWith();
         }
-       
+    }
+
+    private void UnlockDoor()
+    {
+        if (Key != null && ConsumesKey)
+            PlayerInventory.InventoryObjects.Remove(Key);
     }
 }
