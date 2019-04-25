@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay Scenes/TitleScreen.unity
     guid: 6be6ba312fe492a4fb65177ffc87782d
   - enabled: 1
+    path: Assets/Scenes/Gameplay Scenes/Campsite.unity
+    guid: c4f912e0a221fd642a393f71c30374b3
+  - enabled: 1
+    path: Assets/Scenes/Gameplay Scenes/Deep Woods.unity
+    guid: fec96fc9055f6b74a8a3f1b76d97a587
+  - enabled: 1
+    path: Assets/Scenes/Gameplay Scenes/Research Center.unity
+    guid: 371fb86c605772b448f4f8a606243782
+  - enabled: 1
+    path: Assets/Scenes/Gameplay Scenes/Underground.unity
+    guid: c9deadb41de94af40a66c406c2c8dede
+  - enabled: 0
     path: Assets/Scenes/Test Scenes/InteractableObjectTest.unity
     guid: 0927091fc12510b46b16d505ed467842
   m_configObjects: {}
