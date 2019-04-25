@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(AudioSource))]
 public class InteractiveObject : MonoBehaviour, IInteractive
 {
+   [SerializeField]
+    private string SceneToLoad;
+
     [SerializeField]
     private protected string displayText = nameof(InteractiveObject);
     public virtual string DisplayText => displayText;
@@ -18,14 +22,22 @@ public class InteractiveObject : MonoBehaviour, IInteractive
 
     public virtual void InteractWith()
     {
-        try
-        {
-            audioSource.Play();
+
+       if (gameObject.CompareTag("SceneTransition"))
+      {
+            SceneManager.LoadScene(SceneToLoad);
         }
-        catch (System.Exception)
-        {
-            throw new System.Exception("Missing audio component: InteractiveObject requires an AudioSource component");
+        else
+       {
+            try
+            {
+                audioSource.Play();
+            }
+            catch (System.Exception)
+            {
+                throw new System.Exception("Missing audio component: InteractiveObject requires an AudioSource component");
+            }
+            Debug.Log($"Player interacted with {gameObject.name}.");
         }
-        Debug.Log($"Player interacted with {gameObject.name}.");
     }
 }
