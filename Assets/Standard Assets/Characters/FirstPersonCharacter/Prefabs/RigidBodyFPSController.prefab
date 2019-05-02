@@ -92,7 +92,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83c81407209f85e4c87c0cda8b32868e, type: 3}
   m_Name: 
@@ -182,6 +182,8 @@ GameObject:
   - component: {fileID: 1857481575}
   - component: {fileID: 1857481579}
   - component: {fileID: 1857481581}
+  - component: {fileID: 886151422}
+  - component: {fileID: 886151423}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -343,6 +345,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashlight: {fileID: 619305973}
   activatelashlight: 0
+--- !u!114 &886151422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71370b21e5bd2940a7d8dfa11e68be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886151423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9b78e90e180454f94a2f50cf1563e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastOrigin: {fileID: 400000}
+  maxRange: 5
 --- !u!1 &619305971
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +415,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
   m_Range: 10
-  m_SpotAngle: 30
+  m_SpotAngle: 83
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
