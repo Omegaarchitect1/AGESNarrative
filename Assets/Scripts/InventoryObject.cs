@@ -15,6 +15,8 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private Sprite icon;
 
+    private bool interactedWith = false;
+
     public Sprite Icon => icon;
     public string ObjectName => objectName;
     public string Desciption => description;
@@ -35,11 +37,15 @@ public class InventoryObject : InteractiveObject
 
     public override void InteractWith()
     {
-        base.InteractWith();
-        PlayerInventory.InventoryObjects.Add(this);
-        InventoryMenu.Instance.AddItemToMenu(this);
-        collider.enabled = false;
-        renderer.enabled = false;
-        Debug.Log($"Inventory menu game object name {InventoryMenu.Instance.name}");
+        if (!interactedWith)
+        {
+            base.InteractWith();
+            PlayerInventory.InventoryObjects.Add(this);
+            InventoryMenu.Instance.AddItemToMenu(this);
+            collider.enabled = false;
+            renderer.enabled = false;
+            Debug.Log($"Inventory menu game object name {InventoryMenu.Instance.name}");
+            interactedWith = true;
+        }
     }
 }
