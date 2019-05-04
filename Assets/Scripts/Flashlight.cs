@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//summary
+//This script is for a flashlight which will let the player see in dark areas such as the deep woods.
+//summary
 public class Flashlight : MonoBehaviour
 {
-    public Light flashlight;
+    [SerializeField]
+    private Light flashlight;
     public bool activatelashlight = false;
 
     // Start is called before the first frame update
