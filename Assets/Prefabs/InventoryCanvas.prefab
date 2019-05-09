@@ -321,7 +321,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2725598272561136187}
   m_HandleRect: {fileID: 2725598272561136184}
   m_Direction: 2
-  m_Value: 0.9999989
+  m_Value: 1
   m_Size: 0.92046076
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2725598272008378152}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -920,8 +920,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2725598272634251630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 17.391}
+  m_LocalScale: {x: 3.05, y: 3.05, z: 3.05}
   m_Children:
   - {fileID: 2725598274011659443}
   - {fileID: 2725598272197959334}
@@ -930,7 +930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.5999985, y: 6.999996}
+  m_AnchoredPosition: {x: -5.5947, y: 36.667}
   m_SizeDelta: {x: 556.2, y: 404.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2725598272634251619
@@ -1004,7 +1004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000017937116, y: 0.079974495}
+  m_AnchoredPosition: {x: -0.000048383397, y: 0.07994586}
   m_SizeDelta: {x: -0.0016174, y: 291.18}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2725598272781867269
@@ -1318,7 +1318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000012956735}
+  m_AnchoredPosition: {x: -0.0000053974477, y: 0.000012956735}
   m_SizeDelta: {x: 0.000030518, y: 364.6}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2725598273200099967
@@ -1954,7 +1954,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2725598273285326782}
   m_HandleRect: {fileID: 2725598273285326783}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 0.0011446013
   m_Size: 0.9997253
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2156,7 +2156,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -2229,7 +2229,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2725598273954697203}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0

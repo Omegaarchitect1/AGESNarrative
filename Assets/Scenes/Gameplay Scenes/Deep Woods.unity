@@ -11913,14 +11913,14 @@ RectTransform:
   m_GameObject: {fileID: 1077896583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.75, y: 2.75, z: 2.75}
   m_Children: []
   m_Father: {fileID: 720989090}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322.5, y: 142.70001}
+  m_AnchoredPosition: {x: -1405, y: 536}
   m_SizeDelta: {x: 160, y: 80.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077896585
@@ -11956,7 +11956,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The woods are too thick for the Skiff, we''ll have to continue on foot. '
+  m_Text: "The woods are too thick for the Skiff, we'll have to continue on foot.
+    \nFollow the path."
 --- !u!222 &1077896586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17587,6 +17588,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2725598273954697206, guid: 23e517c5a2ca6bf48815adc997340fe7,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2725598272582298897, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -17630,7 +17636,12 @@ PrefabInstance:
     - target: {fileID: 2725598272781867266, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.07998601
+      value: 0.07997714
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725598272781867266, guid: 23e517c5a2ca6bf48815adc997340fe7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00004401698
       objectReference: {fileID: 0}
     - target: {fileID: 2725598272087341340, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
@@ -17652,6 +17663,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2725598272008378152, guid: 23e517c5a2ca6bf48815adc997340fe7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2725598273594190560, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -17670,6 +17686,11 @@ PrefabInstance:
     - target: {fileID: 2725598273285326783, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725598273285326783, guid: 23e517c5a2ca6bf48815adc997340fe7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2725598273747401374, guid: 23e517c5a2ca6bf48815adc997340fe7,
@@ -17702,6 +17723,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2725598272620807355, guid: 23e517c5a2ca6bf48815adc997340fe7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2725598272561136184, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -17716,6 +17742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725598273200099965, guid: 23e517c5a2ca6bf48815adc997340fe7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000029188632
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23e517c5a2ca6bf48815adc997340fe7, type: 3}
@@ -18671,7 +18702,7 @@ RectTransform:
   m_GameObject: {fileID: 2120947812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.79, y: 3.79, z: 3.79}
   m_Children: []
   m_Father: {fileID: 720989090}
   m_RootOrder: 1
