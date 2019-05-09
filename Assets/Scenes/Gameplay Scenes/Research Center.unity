@@ -5467,13 +5467,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696828293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.38, y: 5.37, z: 13.34}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.4499999, y: 5.13, z: 18.06}
   m_LocalScale: {x: 0.35999998, y: 0.19999999, z: 0.19999999}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &696828299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6277,7 +6277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750642069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.42, y: 2.37, z: 21.9}
+  m_LocalPosition: {x: -1.4499999, y: 2.26, z: 21.9}
   m_LocalScale: {x: 1, y: 1, z: 0.57}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14735,15 +14735,15 @@ MonoBehaviour:
   SceneToLoad: 
   displayText: Take Beaker
   objectName: Beaker
-  description: 'Beaker containing samples of local biomass for research purposes.
+  description: 'Beaker containing samples of coolant fluid for research purposes.
 
 
-    Nearby logs show the contets to be a blood sample of a native bird species. Some
-    cells show signs of deterioration, a common and widespread disease that has recently
-    appeared on a number of members of the species.
+    Nearby logs show the contets to be of Mechanosphereic origin, and seemed to act
+    as a cooling agent for some of the heavy ancient machinery. It was apparently
+    recovered from a resevoir nearby and has shown to be toxic to local fauna.
 
 
-    The Order is working to find a cure it seems. '
+    The Order is working to find a solution to this issue.'
   icon: {fileID: 21300000, guid: 713912f523b9edb4981a418992336c8c, type: 3}
 --- !u!82 &1548628738
 AudioSource:
@@ -16729,12 +16729,12 @@ PrefabInstance:
     - target: {fileID: 2725598272781867266, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.079962544
+      value: 0.08001709
       objectReference: {fileID: 0}
     - target: {fileID: 2725598272781867266, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000035443692
+      value: -0.000022090053
       objectReference: {fileID: 0}
     - target: {fileID: 2725598272087341340, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
@@ -17577,7 +17577,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18178
+  m_Name: pb_Mesh13656
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18057,7 +18057,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17992
+  m_Name: pb_Mesh13470
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
