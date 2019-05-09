@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43668932, g: 0.48428768, b: 0.56453675, a: 1}
+  m_IndirectSpecularColor: {r: 0.43668923, g: 0.48428744, b: 0.56453645, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11555,7 +11555,7 @@ PrefabInstance:
     - target: {fileID: 2725598272781867266, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.079978995
+      value: 0.07999122
       objectReference: {fileID: 0}
     - target: {fileID: 2725598272087341340, guid: 23e517c5a2ca6bf48815adc997340fe7,
         type: 3}
@@ -31869,7 +31869,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Objective: Traverse the path and make your way to the research center.'
+  m_Text: 'Objective: Traverse the path and make your way to the research center.
+
+    Press E to interact with or pick up items. '
 --- !u!222 &1726708438
 CanvasRenderer:
   m_ObjectHideFlags: 0
