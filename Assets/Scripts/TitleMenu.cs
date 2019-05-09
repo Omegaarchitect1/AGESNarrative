@@ -18,4 +18,10 @@ public class TitleMenu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+
+    private void Awake()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
 }
